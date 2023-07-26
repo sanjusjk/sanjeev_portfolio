@@ -1,0 +1,29 @@
+/* skills.component.css */
+.skills-content{
+  padding: 10% 10% 50% 10%;
+  display:  flex;
+  color: beige;
+  font-style: italic;
+  }
+
+.skills-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  font-size: 16px;
+}
