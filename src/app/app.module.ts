@@ -8,7 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SkillsComponent } from './skills/skills.component';
-
+import {NgxTypedJsModule} from 'ngx-typed-js';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +19,10 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     BrowserModule,
+    NgxTypedJsModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
