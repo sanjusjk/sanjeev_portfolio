@@ -32,22 +32,26 @@ export class ContactComponent {
 
   constructor(private fb: FormBuilder){}
 
-  send(){
+  async send(){
 
 
   emailjs.init(environment.apikey);
 
-  emailjs.send(environment.serviceid,environment.templateid, {
+  let response = await emailjs.send(environment.serviceid,environment.templateid, {
     from_name: this.formData.value.from_name,
     email: this.formData.value.email,
     subject:this.formData.value.subject,
     message:this.formData.value.message
   })
 	.then(function(response) {
+    alert('Email has been sent Successfully!');
 	   console.log('SUCCESS!', response.status, response.text);
 	}, function(err) {
+    alert(err);
 	   console.log('FAILED...', err);
 	});
+
+  this.formData.reset();
 }
 
 
