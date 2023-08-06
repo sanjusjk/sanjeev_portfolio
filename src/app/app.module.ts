@@ -11,6 +11,8 @@ import { SkillsComponent } from './skills/skills.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ import { BlogComponent } from './blog/blog.component';
     NgxTypedJsModule,
     AppRoutingModule,
     FontAwesomeModule,
-
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,65 @@
+<!-- <section class="contact">
+  <div class="contact-content">
+    <div [formGroup]="formData"
+    class="formbold-main-wrapper"
+    style="display:flex; flex-direction: column; gap: 50;">
+    {{formData.value | json}}
+    <h2>Contact Me</h2>
+      <label for="name">Name: </label>
+      <input id="name" type="text" formControlName="from_name">
+    </div>
+
+  </div>
+
+
+</section> -->
 <section class="contact">
   <div class="contact-content">
-<p>contact works</p>
-  </div>
+<!-- Wrapper container -->
+<div class="container py-4" [formGroup]="formData">
+
+  <!-- Name input -->
+      <div class="col-md-8 offset-md-2">
+        <label class="form-label" for="name" style="align-items: center;">Contact Me</label>
+      </div>
+
+
+
+  <!-- Bootstrap 5 starter form -->
+  <form id="contactForm" action="javascript:void(0)" (submit)="send()">
+
+      <!-- Name input -->
+      <div class="mb-3">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" formControlName="from_name" />
+      </div>
+
+      <!-- Subject input -->
+      <div class="mb-3">
+        <label class="form-label" for="subject">Subject</label>
+        <input class="form-control" id="subject" type="text" placeholder="subject" data-sb-validations="required" formControlName="subject"/>
+    </div>
+
+      <!-- Email address input -->
+      <div class="mb-3">
+          <label class="form-label" for="emailAddress">Email Address</label>
+          <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" formControlName="email"/>
+      </div>
+
+      <!-- Message input -->
+      <div class="mb-3">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-control" id="message" type="text" placeholder="Message"
+              style="height: 10rem;" data-sb-validations="required" formControlName="message"></textarea>
+      </div>
+
+      <!-- Form submit button -->
+      <div class="d-grid">
+          <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+      </div>
+
+  </form>
+
+</div>
+</div>
 </section>
