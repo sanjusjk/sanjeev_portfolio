@@ -94,3 +94,103 @@ background-repeat: no-repeat;
   border-bottom: 1px dotted #00abf0;
 }
 
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10% 5%; /* Adjust padding for top and bottom */
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .home-content {
+    margin-bottom: 30px; /* Add some space below content */
+    text-align: center; /* Center align text */
+    max-width: none; /* Reset max-width */
+  }
+
+  .home-content h1 {
+    font-size: 32px; /* Decrease font size */
+  }
+
+  .home-content h3 {
+    font-size: 22px; /* Decrease font size */
+  }
+
+  .btn-box {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit button box width */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Add spacing between buttons */
+  }
+
+  .home-sci {
+    position: static; /* Remove absolute positioning */
+    margin-top: 20px; /* Add some space on top */
+    justify-content: center; /* Center align social icons */
+  }
+
+  .image {
+    position: static; /* Remove absolute positioning */
+    margin: 20px auto; /* Center align image */
+  }
+
+  .image img {
+    max-width: 100px; /* Limit image size */
+    width: 100%; /* Make sure it resizes properly */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .line {
+    margin: 20px 0; /* Add space above and below the line */
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 10% 5%; /* Adjust padding for top and bottom */
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .home-content {
+    margin-bottom: 30px; /* Add some space below content */
+    text-align: center; /* Center align text */
+    max-width: none; /* Reset max-width */
+  }
+
+  .home-content h1 {
+    font-size: 32px; /* Decrease font size */
+  }
+
+  .home-content h3 {
+    font-size: 22px; /* Decrease font size */
+  }
+
+  .btn-box {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit button box width */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Add spacing between buttons */
+  }
+
+  .home-sci {
+    position: static; /* Remove absolute positioning */
+    margin-top: 20px; /* Add some space on top */
+    justify-content: center; /* Center align social icons */
+  }
+
+  .image {
+    position: static; /* Remove absolute positioning */
+    margin: 20px auto; /* Center align image */
+  }
+
+  .image img {
+    max-width: 100px; /* Limit image size */
+    width: 100%; /* Make sure it resizes properly */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .line {
+    margin: 20px 0; /* Add space above and below the line */
+  }
+}
