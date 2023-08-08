@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
+## Why this project?
+
+I'm a backend developer and with on demand requirements for a Fullstack developers, I thought this would be a better platform to learn the basics of Angular framework and improve my knowledge in HTML, CSS & Js/Ts.
+Additionaly, I also want to get hands on with the cloud using Azure Services. This project will be later hosted on Azure static Website service and also will make use of github workflows for automated deployments as soon as there is any changes to file. More on that later.
+
+## Libraries Used
+bootstrap 
+ngx-typed-js 
+fontawesome 
+emailjs 
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
